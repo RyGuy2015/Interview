@@ -11,7 +11,6 @@ public class PrimeNumbers extends Numbers{
 
 	public ArrayList<Integer> findPrimes(int firstNumber, int lastNumber) {
 		ArrayList<Integer> primeNums = new ArrayList<Integer>();
-		int countPrimes = 0;
 		
 		for (int i=firstNumber; i<=lastNumber; i++) {
 			boolean isPrime = true;
@@ -25,7 +24,6 @@ public class PrimeNumbers extends Numbers{
 			
 			if (isPrime) {
 				primeNums.add(i);
-				countPrimes++;
 			}
 		}
 		
